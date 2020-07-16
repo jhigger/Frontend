@@ -11,6 +11,11 @@ function App() {
 		<Router>
 			<NavBar />
 			<Switch>
+				<Route path="/" exact>
+					<h1 style={{textAlign: 'center'}}>
+						You can access the database using this app
+					</h1>
+				</Route>
 				<Route path="/movies/list" exact component={MoviesList} />
 				<Route path="/movies/create" exact component={MoviesInsert} />
 				<Route path="/movies/update/:id" exact component={MoviesUpdate} />
