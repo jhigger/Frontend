@@ -126,7 +126,9 @@ class MoviesList extends Component {
 			showTable = false;
 		}
 
-		return (
+		return this.state.isLoading ? (
+			<p style={{textAlign: 'center'}}>Loading...</p>
+		) : (
 			<Wrapper>
 				{showTable && (
 					<ReactTable
