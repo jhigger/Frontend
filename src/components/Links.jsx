@@ -25,7 +25,10 @@ class Links extends Component {
 					<List>
 						<Item>
 							<Link
-								onClick={() => window.location.reload()}
+								onClick={() => {
+									if (window.location.pathname === '/movies/list')
+										window.location.reload();
+								}}
 								to="/movies/list"
 								className="nav-link"
 							>

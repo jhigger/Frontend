@@ -78,6 +78,8 @@ class MoviesUpdate extends Component {
 				time: ''
 			});
 		});
+
+		this.props.history.replace('/movies/list');
 	};
 
 	componentDidMount = async () => {
@@ -95,7 +97,7 @@ class MoviesUpdate extends Component {
 		const {name, rating, time} = this.state;
 		return (
 			<Wrapper>
-				<Title>Create Movie</Title>
+				<Title>Update Movie</Title>
 
 				<Label>Name: </Label>
 				<InputText
