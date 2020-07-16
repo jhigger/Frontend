@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-	baseURL: 'http://murmuring-falls-86210.herokuapp.com/api'
+	baseURL: 'http://http://murmuring-falls-86210.herokuapp.com/api'
 });
 
 export const insertMovie = (payload) => api.post(`/movie`, payload);
