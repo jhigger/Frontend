@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-	baseURL: 'http://https://jhigger-backend.herokuapp.com/api'
+	baseURL: 'https://jhigger-backend.herokuapp.com/api'
 });
 
 export const insertMovie = (payload) => api.post(`/movie`, payload);
